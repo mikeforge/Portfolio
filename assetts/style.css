@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+
+header {
+    padding: 2%;
+    background: teal;
+    text-align: Left;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav a {
+    color: lightgray;
+    font-weight: bold;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+
+.work {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
