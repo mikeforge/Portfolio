@@ -31,13 +31,50 @@ nav a {
     text-align: center;
 }
 
+article {
+    text-align: right;
+}
 
-.work {
+.about-me-container {
+    margin: 15px 15px 15px 15px;
+    border: 5px solid black;
+    overflow: auto;
+}
+
+.about-me-pic {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.about-me-pic img{
+    display: block;
+}
+
+.about-me-content {
+    margin-left: 100px;
+}
+
+.about-me-content p {
+    text-align: left;
+    margin: 20px;
+}
+.about-me-title {
+    margin-right:20px;
+    font-weight: bold;
+    font-size: 250%;
+    text-align: right;
+}
+
+.work-container {
     display: flex;
     flex-flow: column wrap;
     padding: 2%;
 }
 
+.box {
+    flex: auto;
+    border: 2px;
+}
 
 
 @media screen and (max-width: 600px) {
