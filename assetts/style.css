@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     font-family:Calibri, Arial, Helvetica, sans-serif;
+    /* background-color: #ffffff; */
+    
 }
 
 body {
@@ -9,28 +11,36 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
+    background-color: #ffffff
   }
 
 header {
     margin: 5px 5px 5px 5px;
     padding: 2%;
     border-radius: 15px;
-    background-image: linear-gradient(
+    background-color: #36096d;
+    background-image: linear-gradient(315deg, #36096d 0%, #26caba 74%);
+    /* background-image: linear-gradient(
         rgba(176, 196, 222, 0.4)
         0%,
         rgba(29, 138, 189, 0.8)
-        100%);
+        100%); */
     text-align: Left;
     color: white;
 }
 
-nav {
+navRight {
     display: flex;
     justify-content: flex-end;
-
 }
 
-nav a {
+navLeft {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+navRight a {
     color: lightgray;
     font-weight: bold;
     padding: 5px 5px;
@@ -41,19 +51,29 @@ article {
     text-align: right;
 }
 
+img {
+    border-radius: 15px;
+    max-width: 100%;
+}
+
 .about-me-container {
+    background-color: #36096d;
+    background-image: linear-gradient(315deg, #36096d 0%, #26caba 74%);
+    border-radius: 15px;
     margin: 15px 15px 15px 15px;
-    border: 5px solid black;
+    border: 2px outset gray;
     overflow: auto;
 }
 
 .about-me-pic {
     float: left;
     margin: 0 20px 0 0;
+    border-radius: 15px;
 }
 
 .about-me-pic img{
     display: block;
+    border-radius: 15px;
 }
 
 .about-me-content {
@@ -75,7 +95,11 @@ article {
     display: flex;
     flex-flow: column wrap;
     padding: 2%;
+}
 
+.center {
+    display: flex;
+    justify-content: center;
 }
 
 .work-container-sub {
@@ -93,12 +117,9 @@ article {
     border: 2px outset gray;
     margin: 5px 5px 5px 5px;
     padding: 100px;
-    border-radius: 5px;
-    background-image: linear-gradient(
-        rgba(176, 196, 222, 0.4)
-        0%,
-        rgba(29, 138, 189, 0.8)
-        100%
+    border-radius: 15px;
+    background-color: #36096d;
+    background-image: linear-gradient(315deg, #36096d 0%, #26caba 74%);
     ) ;
 }
 
